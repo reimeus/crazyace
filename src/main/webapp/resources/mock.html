@@ -1,0 +1,230 @@
+<html>
+<body>
+
+<style>
+    .selected img {border: 2px solid blue;}
+    .unselected img {border: 2px solid white;}
+
+    .errors {
+    	padding-top: 2em;
+    	text-align: center;
+    	font-weight: bold;
+    	color: red;
+	}
+
+	.nohilite {
+		font-weight: bold;
+	}
+
+	.hilite {
+    	color: red;
+    	font-weight: bold;
+    	text-align: left;
+	}
+
+	.head {
+		margin: auto;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+		text-align: center;
+    	font-weight: bold;
+    	padding-bottom:10px;
+    	width: 20em;
+    	border-bottom: 2px solid #808080;
+	}
+
+	img {
+    	vertical-align: middle;
+	}
+
+	button {
+		width: 70px;
+	}
+
+	.cards {
+		margin: auto;
+		width: 34em;
+		padding:10px;
+		margin-top:10px;
+		height:auto;
+		text-align: left;
+	}
+
+	.seluser {
+		color: white;
+		background-color:red;
+		width: 300px;
+		display:inline-block;
+	}
+
+	.buttonbar {
+		margin: auto;
+		width: 34em;
+		font-weight: bold;
+		padding:10px;
+		margin-top:10px;
+		text-align: center;
+	}
+
+	.outer {
+		margin: auto;
+		text-align: center;
+	}
+
+	.ptrcell {
+		width: 25px;
+		display:inline-block;
+		text-align: left;
+	}
+	.cell {
+		width: 100px;
+		display:inline-block;
+		text-align: left;
+	}
+
+	.status {
+		margin: auto;
+		width: 40em;
+		font-weight: bold;
+		text-align: center;
+		padding-bottom:40px;
+		//border: 1px solid red;
+	}
+
+	.namecell {
+		float: left;
+		display:inline-block;
+	}
+
+	.centercell {
+		float: center;
+		display:inline-block;
+	}
+
+	.timecell {
+		display:inline-block;
+		float: right;
+	}
+
+	.playstyle {
+		padding: 10px;
+		border: 1px solid #808080;
+		margin-right: 10px;
+	}
+
+	.infomsg {
+		padding-top:20px;
+		padding-bottom:20px;
+		height:2em;
+		text-align: center;
+    	font-weight: bold;
+	}
+
+	.blockinfonb {
+		color: red;
+	}
+
+	.winlose {
+		font-size: 2em;
+		color: red;
+		font-family: "Comic Sans MS", cursive, sans-serif;
+	}
+</style>
+
+
+<h1 class="head">
+	Crazy Ace
+	<img src="crazyace2.png">
+</h1>
+
+<p>
+
+<div class="status">
+	<span class="namecell">Player 1</span>
+	<span class="timecell">Waiting for another player to join</span>
+</div>
+
+<div class="outer">
+
+<div>
+	<div class="hilite, seluser">
+		<span class="ptrcell">&#10148;</span>
+		<span class="cell">Player 1</span>
+		<span class="cell">7 cards</span>
+	</div>
+
+	<div class="nohilite">
+		<span class="ptrcell">&nbsp;</span>
+		<span class="cell">Foo2</span>
+		<span class="cell">7 cards</span>
+	</div>
+
+</div>
+
+<p>
+<!--
+	<tr class="spaceUnderBig" align="right">
+	  <td align=left>
+	  	<img src="cardback.png">
+	  </td>
+
+	  <td align=left>
+	  	<img src="waiting.png">
+	  </td>
+	</tr>
+-->
+<div class="spaceUnderBig">
+<span>
+ <img src="cardback.png">
+</span>
+<span>
+ <img src="waiting.png">
+</span>
+</div>
+
+<div class="infomsg">
+Current suit is now
+<span class="blockinfonb">Clubs</span>
+
+<span class="winlose">
+
+</span>
+</div>
+
+<div class="cards">
+	    <img src="2_diamonds.png">
+	    <img src="3_diamonds.png">
+	    <img src="4_diamonds.png">
+	    <img src="5_diamonds.png">
+	    <img src="6_diamonds.png">
+	    <img src="7_diamonds.png">
+	    <img src="8_diamonds.png">
+</div>
+
+<div class="buttonbar">
+
+<span class="playstyle">
+	<span disabled="true">
+		<label for="suit" title="Suit for selected ace">Suit:</label>
+		<select name="suit">
+		  <option value="---"></option>
+		  <option value="clubs">Clubs</option>
+		  <option value="diamonds">Diamonds</option>
+		  <option value="hearts">Hearts</option>
+		  <option value="spades">Spades</option>
+		</select>
+	</span>
+
+	<button title="Play the currently selected card">Play</button>
+</span>
+
+	<button title="Request a card from the deck">Request</button>
+
+</div>
+
+<div ng-bind="errorMessage" class="errors">Some error...</div>
+
+
+
+
+<div style="float: left;">Left Div</div>
+<div style="float: right;">Right Div</div>

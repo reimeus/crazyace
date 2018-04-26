@@ -1,0 +1,129 @@
+.selected img {border: 2px solid blue;}
+.unselected img {border: 2px solid white;}
+
+.errors {
+	padding-top: 2em;
+	text-align: center;
+	font-weight: bold;
+	color: red;
+}
+
+.nohilite {
+	margin: auto;
+	font-weight: bold;
+}
+
+.hilite {
+	margin: auto;
+	color: red;
+	font-weight: bold;
+}
+
+.head {
+	margin: auto;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-weight: bold;
+	padding-bottom:10px;
+	width: 20em;
+	border-bottom: 2px solid #808080;
+	text-align: center;
+}
+
+img {
+	vertical-align: middle;
+}
+
+button {
+	width: 70px;
+}
+
+.cards {
+	margin: auto;
+	width: 36em;
+	padding:10px;
+	margin-top:10px;
+	height:auto;
+	text-align: left;
+}
+
+.seluser {
+	margin: auto;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+	background-color:red;
+	width: 300px;
+	display:inline-block;
+}
+
+.buttonbar {
+	margin: auto;
+	width: 34em;
+	padding:10px;
+	margin-top:10px;
+	text-align: center;
+}
+
+.outer {
+	margin: auto;
+	text-align: center;
+}
+
+.ptrcell {
+	margin: auto;
+	width: 25px;
+	display:inline-block;
+	text-align: left;
+}
+
+.cell {
+	width: 100px;
+	display:inline-block;
+	text-align: left;
+}
+
+.status {
+	margin: auto;
+	width: 40em;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom:40px;
+}
+
+.namecell {
+	margin: auto;
+	float: left;
+	display:inline-block;
+}
+
+.timecell {
+	margin: auto;
+	display:inline-block;
+	float: right;
+}
+
+.playstyle {
+	padding: 10px;
+	border: 1px solid #808080;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+
+.infomsg {
+	padding-top:20px;
+	padding-bottom:20px;
+	height:2em;
+	text-align: center;
+   	font-weight: bold;
+}
+
+.blockinfonb {
+	color: red;
+}
+
+.winlose {
+	font-size: 2em;
+	color: red;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
